@@ -1,0 +1,81 @@
+<div class="container">
+  <div class="row vh-100 align-items-center">
+    <div class="col-xxl-4 offset-xxl-4 col-lg-6 offset-lg-3 col-10 offset-1">
+      <div
+        class="rounded-4 border-0 shadow-lg bg-white"
+        style="min-height: 450px"
+      >
+        <div class="d-flex justify-content-start align-items-center">
+          <div class="p-5 w-100">
+            <div class="mb-4 h2 text-success">Sign Up</div>
+
+            <form [formGroup]="form" (ngSubmit)="onSubmit()">
+              <div class="mb-3">
+                <input
+                  class="form-control bg-body-secondary"
+                  placeholder="First Name"
+                  formControlName="firstName"
+                />
+              </div>
+              <div class="mb-3">
+                <input
+                  class="form-control bg-body-secondary"
+                  placeholder="Last Name"
+                  formControlName="lastName"
+                />
+              </div>
+
+              <div class="mb-3">
+                <input
+                  class="form-control bg-body-secondary"
+                  placeholder="Phone Number"
+                  formControlName="phone"
+                />
+              </div>
+              <div class="mb-3">
+                <input
+                  class="form-control bg-body-secondary"
+                  placeholder="Email"
+                  formControlName="email"
+                />
+              </div>
+              <div class="mb-3">
+                <input
+                  class="form-control bg-body-secondary"
+                  placeholder="Address"
+                  formControlName="address"
+                />
+              </div>
+              <div class="mb-3">
+                <input
+                  type="password"
+                  class="form-control bg-body-secondary"
+                  placeholder="Password"
+                  formControlName="password"
+                />
+              </div>
+              <div *ngIf="errorMessage" class="alert alert-danger">
+                {{ errorMessage }}
+              </div>
+              <div *ngIf="successMessage" class="alert alert-success">
+                {{ successMessage }}
+              </div>
+
+              <div class="mt-4">
+                <button type="submit" class="btn btn-success w-100 rounded-3">
+                  Register
+                </button>
+              </div>
+            </form>
+            <div class="mt-4 text-center">
+              <span>
+                Already have an account? 
+                <a routerLink="/login" class="text-primary">Login</a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
