@@ -8,19 +8,17 @@ import {
 import { CommonModule } from '@angular/common';
 import { AuthService } from '../../shared/services/auth.service';
 import { Router } from '@angular/router';
-import { UserComponent } from '../user.component';
 import { RouterModule } from '@angular/router';
 
 
 @Component({
   selector: 'app-registration',
   standalone: true,
-  imports: [ReactiveFormsModule, CommonModule, UserComponent,RouterModule],
+  imports: [ReactiveFormsModule, CommonModule,RouterModule],
   templateUrl: './registration.component.html',
   styleUrl: './registration.component.css',
 })
 export class RegistrationComponent {
-  @ViewChild(UserComponent) userComponent!: UserComponent;
   form: any;
   isSubmitted: boolean = false;
   errorMessage: string = '';

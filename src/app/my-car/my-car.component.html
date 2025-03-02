@@ -1,0 +1,192 @@
+<div class="container mt-5">
+  <div class="row">
+    <div class="col-12">
+      <div class="p-4 bg-light rounded-3 shadow-sm">
+        <h2 class="text-center mb-5">Your Cars</h2>
+        <ul class="list-group">
+          <li *ngFor="let car of cars" class="list-group-item clickable car-item mb-3" (click)="toggleExpand(car)">
+            <div class="d-flex justify-content-between align-items-center">
+              <div>
+                <h5 class="mb-0"><strong>{{ car.make }} {{ car.model }}</strong> ({{ car.year }})</h5>
+                <p class="mb-0">VIN: {{ car.vin }} - License Plate: {{ car.licensePlate }}</p>
+              </div>
+              <div class="d-flex align-items-center">
+                <button class="btn btn-warning btn-sm me-2" (click)="editCar(car); $event.stopPropagation();">
+                  <i class="fas fa-edit"></i>
+                </button>
+                <button class="btn btn-danger btn-sm me-2" (click)="deleteCar(car); $event.stopPropagation();">
+                  <i class="fas fa-times"></i>
+                </button>
+                <i class="fas" [ngClass]="car.isExpanded ? 'fa-chevron-up' : 'fa-chevron-down'"></i>
+              </div>
+            </div>
+            <div *ngIf="car.isExpanded" class="mt-3">
+              <h5>Service History</h5>
+              <ul class="list-group" *ngIf="car.serviceHistory && car.serviceHistory.length > 0; else noHistory">
+                <li *ngFor="let history of car.serviceHistory" class="list-group-item">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div>
+                      <strong>Date:</strong> {{ history.serviceDate | date }}<br>
+                      <strong>Description:</strong> {{ history.description }}<br>
+                      <strong>Cost:</strong> ${{ history.totalCost }}<br>
+                      <strong>Status:</strong> <span [ngClass]="{'text-success': history.status === 'Completed', 'text-warning': history.status === 'Pending', 'text-danger': history.status === 'Cancelled'}">{{ history.status }}</span><br>
+                      <strong>Mechanic:</strong> {{ history.mechanicFirstName }} {{ history.mechanicLastName }}<br>
+                      <strong>Parts Used:</strong>
+                      <ul>
+                        <li *ngFor="let part of history.parts">
+                          {{ part.partName }} ({{ part.partQuantity }} units) - ${{ part.partPrice }}
+                        </li>
+                      </ul>
+                    </div>
+                    <button class="btn btn-danger btn-sm" (click)="deleteService(car, history); $event.stopPropagation();">Delete Service</button>
+                  </div>
+                </li>
+              </ul>
+              <ng-template #noHistory>
+                <div class="alert alert-info" role="alert">
+                  No service history available.
+                </div>
+              </ng-template>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="row mt-5">
+    <div class="col-12 text-center">
+      <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#addCarForm" aria-expanded="false" aria-controls="addCarForm">
+        <i class="fas fa-plus"></i>
+      </button>
+    </div>
+  </div>
+
+  <div class="collapse mt-3" id="addCarForm">
+    <div class="card card-body">
+      <h2 class="text-center mb-4">Add a New Car</h2>
+      <form [formGroup]="carForm" (ngSubmit)="onSubmit()">
+        <div class="row mb-3">
+          <div class="col-md-6">
+            <label for="make" class="form-label">Make</label>
+            <input
+              type="text"
+              id="make"
+              class="form-control"
+              formControlName="make"
+              placeholder="Enter car make"
+            />
+          </div>
+          <div class="col-md-6">
+            <label for="model" class="form-label">Model</label>
+            <input
+              type="text"
+              id="model"
+              class="form-control"
+              formControlName="model"
+              placeholder="Enter car model"
+            />
+          </div>
+        </div>
+        <div class="row mb-3">
+          <div class="col-md-6">
+            <label for="year" class="form-label">Year</label>
+            <input
+              type="number"
+              id="year"
+              class="form-control"
+              formControlName="year"
+              placeholder="Enter car year"
+            />
+          </div>
+          <div class="col-md-6">
+            <label for="vin" class="form-label">VIN</label>
+            <input
+              type="text"
+              id="vin"
+              class="form-control"
+              formControlName="vin"
+              placeholder="Enter car VIN"
+            />
+          </div>
+        </div>
+        <div class="mb-3">
+          <label for="licensePlate" class="form-label">License Plate</label>
+          <input
+            type="text"
+            id="licensePlate"
+            class="form-control"
+            formControlName="licensePlate"
+            placeholder="Enter car license plate"
+          />
+        </div>
+        <button type="submit" class="btn btn-primary w-100">Add Car</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Edit Car Modal -->
+  <div class="custom-modal" *ngIf="isEditModalOpen">
+    <div class="custom-modal-content">
+      <span class="close" (click)="closeEditModal()">&times;</span>
+      <h2 class="text-center mb-4">Edit Car</h2>
+      <form [formGroup]="editCarForm" (ngSubmit)="onEditSubmit()">
+        <div class="row mb-3">
+          <div class="col-md-6">
+            <label for="editMake" class="form-label">Make</label>
+            <input
+              type="text"
+              id="editMake"
+              class="form-control"
+              formControlName="make"
+              placeholder="Enter car make"
+            />
+          </div>
+          <div class="col-md-6">
+            <label for="editModel" class="form-label">Model</label>
+            <input
+              type="text"
+              id="editModel"
+              class="form-control"
+              formControlName="model"
+              placeholder="Enter car model"
+            />
+          </div>
+        </div>
+        <div class="row mb-3">
+          <div class="col-md-6">
+            <label for="editYear" class="form-label">Year</label>
+            <input
+              type="number"
+              id="editYear"
+              class="form-control"
+              formControlName="year"
+              placeholder="Enter car year"
+            />
+          </div>
+          <div class="col-md-6">
+            <label for="editVin" class="form-label">VIN</label>
+            <input
+              type="text"
+              id="editVin"
+              class="form-control"
+              formControlName="vin"
+              placeholder="Enter car VIN"
+            />
+          </div>
+        </div>
+        <div class="mb-3">
+          <label for="editLicensePlate" class="form-label">License Plate</label>
+          <input
+            type="text"
+            id="editLicensePlate"
+            class="form-control"
+            formControlName="licensePlate"
+            placeholder="Enter car license plate"
+          />
+        </div>
+        <button type="submit" class="btn btn-primary w-100">Update Car</button>
+      </form>
+    </div>
+  </div>
+</div>

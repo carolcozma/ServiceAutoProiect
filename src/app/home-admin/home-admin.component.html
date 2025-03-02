@@ -1,0 +1,149 @@
+<div class="container mt-5">
+  <h1>Admin Dashboard</h1>
+  
+  <!-- Latest Pending Services -->
+  <div class="row mb-4">
+    <div class="col-md-12">
+      <div class="card">
+        <div class="card-header">
+          Latest Pending Services
+        </div>
+        <div class="card-body">
+          <table class="table table-striped">
+            <thead>
+              <tr>
+                <th>Car</th>
+                <th>Customer</th>
+                <th>Description</th>
+                <th>Service Date</th>
+                <th>Status</th>
+                <th>Actions</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let service of displayedServices">
+                <td>{{ service.carMake }} {{ service.carModel }}</td>
+                <td>{{ service.customerFirstName }} {{ service.customerLastName }}</td>
+                <td>{{ service.description}}</td>
+                <td>{{ service.serviceDate | date }}</td>
+                
+                <td>
+                  <span class="badge" [ngClass]="{
+                    'bg-success': service.status === 'Completed',
+                    'bg-warning': service.status === 'Pending',
+                    'bg-danger': service.status === 'Cancelled'
+                  }">{{ service.status }}</span>
+                </td>
+                <td>
+                  <button class="btn btn-primary btn-sm me-2" (click)="editService(service)">
+                    <i class="fas fa-edit"></i>
+                  </button>
+                  <button class="btn btn-danger btn-sm" (click)="deleteService(service.serviceID)">
+                    <i class="fas fa-trash-alt"></i>
+                  </button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <nav aria-label="Page navigation">
+            <ul class="pagination justify-content-center">
+              <li class="page-item" [class.disabled]="currentPage === 1">
+                <a class="page-link" (click)="previousPage()">Previous</a>
+              </li>
+              <li class="page-item" *ngFor="let page of [].constructor(totalPages()); let i = index" [class.active]="currentPage === i + 1">
+                <a class="page-link" (click)="goToPage(i + 1)">{{ i + 1 }}</a>
+              </li>
+              <li class="page-item" [class.disabled]="currentPage === totalPages()">
+                <a class="page-link" (click)="nextPage()">Next</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Dark overlay when modal is open -->
+  <div *ngIf="editingService" class="modal-backdrop"></div>
+
+  <!-- Edit Service Modal -->
+  <div *ngIf="editingService" class="modal" tabindex="-1" role="dialog" style="display: block;">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Edit Service</h5>
+          <button type="button" class="btn btn-danger position-absolute top-0 end-0 m-2" (click)="cancelEdit()">
+            <i class="fas fa-times"></i>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form (ngSubmit)="saveService()">
+            <div class="form-group">
+              <label for="serviceDate">Service Date</label>
+              <input type="date" class="form-control" id="serviceDate" [(ngModel)]="editingService.serviceDate" name="serviceDate" required>
+            </div>
+            <div class="form-group">
+              <label for="description">Description</label>
+              <input type="text" class="form-control" id="description" [(ngModel)]="editingService.description" name="description" required>
+            </div>
+            <div class="form-group">
+              <label for="totalCost">Total Cost</label>
+              <input type="number" class="form-control" id="totalCost" [(ngModel)]="editingService.totalCost" name="totalCost" required>
+            </div>
+            <div class="form-group">
+              <label for="status">Status</label>
+              <select class="form-control" id="status" [(ngModel)]="editingService.status" name="status" required>
+                <option value="Pending">Pending</option>
+                <option value="Completed">Completed</option>
+                <option value="Canceled">Canceled</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="mechanicId">Mechanic ID</label>
+              <select class="form-control mb-2" id="mechanicId" [(ngModel)]="editingService.mechanicId" name="mechanicId" required>
+                <option *ngFor="let mechanic of mechanics" [value]="mechanic.mechanicId">{{ mechanic.firstName }} {{ mechanic.lastName }}</option>
+              </select>
+            </div>
+            <button type="submit" class="btn btn-primary me-2">Update Service</button>
+            <button type="button" class="btn btn-secondary" (click)="cancelEdit()">Cancel</button>
+          </form>
+          <hr>
+          <h5>Car Parts</h5>
+          <table class="table table-striped">
+            <thead>
+              <tr>
+                <th>Part Name</th>
+                <th>Price</th>
+                <th>Quantity</th>
+                <th>Actions</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let part of serviceCarParts">
+                <td>{{ part.partName }}</td>
+                <td>{{ part.price }}</td>
+                <td>{{ part.quantity }}</td>
+                <td>
+                  <button class="btn btn-danger btn-sm" (click)="deleteCarPart(part.partId)">Delete</button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <form>
+            <div class="form-group">
+              <label for="carPart">Select Car Part</label>
+              <select class="form-control" id="carPart" [(ngModel)]="newCarPart.carPartId" [ngModelOptions]="{standalone: true}">
+                <option *ngFor="let part of carParts" [value]="part.carPartId">{{ part.partName }}</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="partQuantity">Quantity</label>
+              <input type="number" class="form-control" id="partQuantity" [(ngModel)]="newCarPart.partQuantity" [ngModelOptions]="{standalone: true}">
+            </div>
+            <button type="button" class="btn btn-primary mt-2" (click)="addCarPart()">Add Part</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

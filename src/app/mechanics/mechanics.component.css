@@ -1,0 +1,15 @@
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border-radius: 100px;
+}
+
+th, td {
+  border: 1px solid #000000;
+  padding: 8px;
+}
+
+th {
+  background-color: rgb(1, 42, 91);;
+  text-align: left;
+}

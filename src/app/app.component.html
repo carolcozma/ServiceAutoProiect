@@ -1,3 +1,22 @@
-<div>
-  <router-outlet></router-outlet>
+<div *ngIf="!isLoginRoute() && !isRegistrationRoute(); else authTemplate">
+  <div>
+    <div>
+      <app-left-sidebar
+        [isLeftSidebarCollapsed]="isLeftSidebarCollapsed()"
+        (changeIsLeftSidebarCollapsed)="changeIsLeftSidebarCollapsed($event)"
+      ></app-left-sidebar>
+    </div>
+    <app-home
+      [isLeftSidebarCollapsed]="isLeftSidebarCollapsed()"
+      [screenWidth]="screenWidth()"
+    ></app-home>
+  </div>
 </div>
+<ng-template #authTemplate>
+  <ng-container *ngIf="isLoginRoute(); else registrationTemplate">
+    <app-login></app-login>
+  </ng-container>
+  <ng-template #registrationTemplate>
+    <app-registration></app-registration>
+  </ng-template>
+</ng-template>

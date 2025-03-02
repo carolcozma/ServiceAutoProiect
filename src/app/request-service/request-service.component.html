@@ -1,0 +1,29 @@
+<div class="container mt-5">
+  <div class="row">
+    <div class="col-12">
+      <h2 class="text-center">Request a Service</h2>
+      <form [formGroup]="requestServiceForm" (ngSubmit)="onSubmit()" *ngIf="!successMessage">
+        <div class="mb-3">
+          <label for="car" class="form-label">Select Your Car</label>
+          <select id="car" class="form-select" formControlName="car">
+            <option *ngFor="let car of cars" [value]="car.carID">
+              {{ car.make }} {{ car.model }} ({{ car.year }}) - VIN: {{ car.vin }}
+            </option>
+          </select>
+        </div>
+        <div class="mb-3">
+          <label for="service" class="form-label">Select Service</label>
+          <select id="service" class="form-select" formControlName="service">
+            <option *ngFor="let service of serviceTypes" [value]="service.serviceTypeId">
+              {{ service.serviceName }} - {{ service.price | number:'1.2-2' }} lei
+            </option>
+          </select>
+        </div>
+        <button type="submit" class="btn btn-primary w-100">Request Service</button>
+      </form>
+      <div *ngIf="successMessage" class="alert alert-success mt-3" role="alert">
+        {{ successMessage }}
+      </div>
+    </div>
+  </div>
+</div>

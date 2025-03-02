@@ -1,0 +1,49 @@
+<div class="container mt-4">
+  <h1 class="text-center">Mechanics</h1>
+  <div class="form-group mb-4">
+    <label for="mechanic-select" class="form-label">Select Mechanic:</label>
+    <select id="mechanic-select" class="form-select" (change)="onMechanicChange($event)">
+      <option *ngFor="let mechanic of mechanics" [value]="mechanic.mechanicId">
+        {{ mechanic.firstName }} {{ mechanic.lastName }}
+      </option>
+    </select>
+  </div>
+
+  <div *ngIf="services.length > 0" class="table-responsive mt-4">
+    <table class="table table-hover table-bordered align-middle">
+      <thead class="table-dark">
+        <tr>
+          <th scope="col">Service ID</th>
+          <th scope="col">Car Make</th>
+          <th scope="col">Car Model</th>
+          <th scope="col">Customer Name</th>
+          <th scope="col">Service Date</th>
+          <th scope="col">Status</th>
+          <th scope="col">Total Cost</th>
+          <th scope="col">Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let service of services">
+          <td>{{ service.serviceID }}</td>
+          <td>{{ service.carMake }}</td>
+          <td>{{ service.carModel }}</td>
+          <td>{{ service.customerFirstName }} {{ service.customerLastName }}</td>
+          <td>{{ service.serviceDate | date }}</td>
+          <td>
+            <span class="badge" [ngClass]="{
+              'bg-success': service.status === 'Completed',
+              'bg-warning': service.status === 'Pending',
+              'bg-danger': service.status === 'Cancelled'
+            }">{{ service.status }}</span>
+          </td>
+          <td>{{ service.totalCost | currency }}</td>
+          <td>{{ service.description }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div *ngIf="services.length === 0 && noServicesMessage" class="alert alert-warning mt-4 text-center">
+    {{ noServicesMessage }}
+  </div>
+</div>

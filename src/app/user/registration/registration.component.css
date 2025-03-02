@@ -1,0 +1,13 @@
+.btn-custom {
+  background-color: rgb(1, 42, 91);
+  color: white;
+  border: none;
+}
+
+.btn-custom:hover {
+  background-color: rgb(0, 30, 65); /* Optional: Darker shade for hover effect */
+}
+
+.text-custom {
+  color: rgb(1, 42, 91); /* Set the desired color for the text */
+}

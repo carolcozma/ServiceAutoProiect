@@ -1,0 +1,33 @@
+<div class="container mt-5">
+  <div class="row mb-4">
+    <div class="col-md-6">
+      <input
+        type="text"
+        class="form-control"
+        placeholder="Search car parts..."
+        [(ngModel)]="searchQuery"
+        (input)="filterAndSortParts()"
+      />
+    </div>
+    <div class="col-md-6">
+      <select class="form-select" [(ngModel)]="sortCriteria" (change)="filterAndSortParts()">
+        <option value="">Sort by</option>
+        <option value="name">Name</option>
+        <option value="price">Price</option>
+        <option value="quantity">Quantity</option>
+      </select>
+    </div>
+  </div>
+  <div class="row">
+    <div *ngFor="let part of filteredCarParts" class="col-md-4 mb-4">
+      <div class="card h-100">
+        <img [src]="'/' + part.filePath" class="card-img-top" alt="{{ part.partName }}">
+        <div class="card-body">
+          <h5 class="card-title">{{ part.partName }}</h5>
+          <p class="card-text">Price: {{ part.price }} lei</p>
+          <p class="card-text">Quantity: {{ part.quantity }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,195 @@
+<div class="container mt-5">
+  <h1>Admin Statistics Dashboard</h1>
+
+  <!-- Total Services and Revenue -->
+  <div class="row mb-4">
+    <div class="col-md-6">
+      <div class="card text-white bg-primary mb-3">
+        <div class="card-header">Total Services</div>
+        <div class="card-body">
+          <h5 class="card-title">{{ totalServices }}</h5>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="card text-white bg-success mb-3">
+        <div class="card-header">Total Revenue</div>
+        <div class="card-body">
+          <h5 class="card-title">{{ totalRevenue }} lei</h5>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Average Service Cost -->
+  <div class="row mb-4">
+    <div class="col-md-12">
+      <div class="card text-white bg-info mb-3">
+        <div class="card-header">Average Service Cost</div>
+        <div class="card-body">
+          <h5 class="card-title">{{ averageServiceCost }} lei</h5>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Top Customers -->
+  <div class="row mb-4">
+    <div class="col-md-12">
+      <div class="card">
+        <div class="card-header">Top Customers</div>
+        <div class="card-body">
+          <table class="table table-striped">
+            <thead>
+              <tr>
+                <th>Customer Name</th>
+                <th>Number of Services</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let customer of topCustomers">
+                <td>{{ customer.firstName }} {{ customer.lastName }}</td>
+                <td>{{ customer.serviceCount }}</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Mechanic Performance -->
+  <div class="row mb-4">
+    <div class="col-md-12">
+      <div class="card">
+        <div class="card-header">Mechanic Performance</div>
+        <div class="card-body">
+          <table class="table table-striped">
+            <thead>
+              <tr>
+                <th>Mechanic Name</th>
+                <th>Number of Services</th>
+                
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let mechanic of mechanicPerformance">
+                <td>{{ mechanic.firstName }} {{ mechanic.lastName }}</td>
+                <td>{{ mechanic.serviceCount }}</td>
+          
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Low Stock Parts -->
+  <div class="row mb-4">
+    <div class="col-md-12">
+      <div class="card">
+        <div class="card-header">Low Stock Parts</div>
+        <div class="card-body">
+          <table class="table table-striped">
+            <thead>
+              <tr>
+                <th>Part Name</th>
+                <th>Quantity</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let part of lowStockParts">
+                <td>{{ part.partName }}</td>
+                <td>{{ part.stockQuantity }}</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Service Type Analysis -->
+  <div class="row mb-4">
+    <div class="col-md-12">
+      <div class="card">
+        <div class="card-header">Service Type Analysis</div>
+        <div class="card-body">
+          <table class="table table-striped">
+            <thead>
+              <tr>
+                <th>Service Type</th>
+                <th>Number of Services</th>
+            
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let serviceType of serviceTypeAnalysis">
+                <td>{{ serviceType.serviceTypeName }}</td>
+                <td>{{ serviceType.serviceCount }}</td>
+               
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Top Mechanics by Revenue -->
+  <div class="row mb-4">
+    <div class="col-md-12">
+      <div class="card">
+        <div class="card-header">Top Mechanics by Revenue</div>
+        <div class="card-body">
+          <table class="table table-striped">
+            <thead>
+              <tr>
+                <th>Mechanic Name</th>
+                <th>Number of Services</th>
+                <th>Total Revenue</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let mechanic of topMechanicsByRevenue">
+                <td>{{ mechanic.firstName }} {{ mechanic.lastName }}</td>
+                <td>{{ mechanic.serviceCount }}</td>
+                <td>{{ mechanic.totalRevenue }} lei</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Monthly Revenue and Service Count -->
+  <div class="row mb-4">
+    <div class="col-md-12">
+      <div class="card">
+        <div class="card-header">Monthly Revenue and Service Count</div>
+        <div class="card-body">
+          <table class="table table-striped">
+            <thead>
+              <tr>
+                <th>Year</th>
+                <th>Month</th>
+                <th>Number of Services</th>
+                <th>Total Revenue</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let revenue of monthlyRevenueAndServiceCount">
+                <td>{{ revenue.year }}</td>
+                <td>{{ revenue.month }}</td>
+                <td>{{ revenue.serviceCount }}</td>
+                <td>{{ revenue.totalRevenue }} lei</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
