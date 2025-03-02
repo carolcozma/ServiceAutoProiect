@@ -1,0 +1,469 @@
+[
+  {
+    "ContainingType": "ServiceAutoProiect.Controllers.CustomersController",
+    "Method": "AddCar",
+    "RelativePath": "api/Customers/AddCar",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "car",
+        "Type": "ServiceAutoProiect.Models.Car",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ServiceAutoProiect.Controllers.CustomersController",
+    "Method": "AddCarPartToService",
+    "RelativePath": "api/Customers/AddCarPartToService/{serviceID}/{CarPartId}/{Quantity}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "serviceID",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "CarPartId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "Quantity",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ServiceAutoProiect.Controllers.CustomersController",
+    "Method": "AddCustomer",
+    "RelativePath": "api/Customers/AddCustomer",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "customer",
+        "Type": "ServiceAutoProiect.Models.Customer",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ServiceAutoProiect.Controllers.CustomersController",
+    "Method": "AddService",
+    "RelativePath": "api/Customers/AddService",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "addService",
+        "Type": "ServiceAutoProiect.Models.AddService",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ServiceAutoProiect.Controllers.CustomersController",
+    "Method": "DeleteCar",
+    "RelativePath": "api/Customers/DeleteCar",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "carID",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ServiceAutoProiect.Controllers.CustomersController",
+    "Method": "DeleteCarPartFromService",
+    "RelativePath": "api/Customers/DeleteCarPartFromService/{serviceID}/{partID}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "serviceID",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "partID",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ServiceAutoProiect.Controllers.CustomersController",
+    "Method": "DeleteService",
+    "RelativePath": "api/Customers/DeleteService",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "serviceID",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ServiceAutoProiect.Controllers.CustomersController",
+    "Method": "GetAllCarParts",
+    "RelativePath": "api/Customers/GetAllCarParts",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ServiceAutoProiect.Controllers.CustomersController",
+    "Method": "GetCustomers",
+    "RelativePath": "api/Customers/GetAllCustomers",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ServiceAutoProiect.Controllers.CustomersController",
+    "Method": "GetAllMechanics",
+    "RelativePath": "api/Customers/GetAllMechanics",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ServiceAutoProiect.Controllers.CustomersController",
+    "Method": "GetAllServices",
+    "RelativePath": "api/Customers/GetAllServices",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ServiceAutoProiect.Controllers.CustomersController",
+    "Method": "GetCarParts",
+    "RelativePath": "api/Customers/GetCarParts",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ServiceAutoProiect.Controllers.CustomersController",
+    "Method": "GetCarsByCustomerId",
+    "RelativePath": "api/Customers/GetCarsByCustomerId",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "customerId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ServiceAutoProiect.Controllers.CustomersController",
+    "Method": "GetCustomerByEmail",
+    "RelativePath": "api/Customers/GetCustomerByEmail",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "email",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ServiceAutoProiect.Controllers.CustomersController",
+    "Method": "GetServicePartsAllByServiceId",
+    "RelativePath": "api/Customers/GetServicePartsAllByServiceId",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "serviceId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ServiceAutoProiect.Controllers.CustomersController",
+    "Method": "GetServicePartsByServiceId",
+    "RelativePath": "api/Customers/GetServicePartsByServiceId",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "serviceId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ServiceAutoProiect.Controllers.CustomersController",
+    "Method": "GetServicesByCarId",
+    "RelativePath": "api/Customers/GetServicesByCarId",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "carId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ServiceAutoProiect.Controllers.CustomersController",
+    "Method": "GetServicesByMechanicId",
+    "RelativePath": "api/Customers/GetServicesByMechanicId/{mechanicId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "mechanicId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ServiceAutoProiect.Controllers.CustomersController",
+    "Method": "GetServiceTypes",
+    "RelativePath": "api/Customers/GetServiceTypes",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ServiceAutoProiect.Controllers.CustomersController",
+    "Method": "Login",
+    "RelativePath": "api/Customers/Login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "loginRequest",
+        "Type": "ServiceAutoProiect.Models.LoginRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ServiceAutoProiect.Controllers.CustomersController",
+    "Method": "GetMonthlyRevenueAndServiceCount",
+    "RelativePath": "api/Customers/monthly-revenue-and-service-count",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ServiceAutoProiect.Controllers.CustomersController",
+    "Method": "GetServiceTypeDistribution",
+    "RelativePath": "api/Customers/service-type-distribution",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ServiceAutoProiect.Controllers.CustomersController",
+    "Method": "GetAverageServiceCost",
+    "RelativePath": "api/Customers/statistics/average-service-cost",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ServiceAutoProiect.Controllers.CustomersController",
+    "Method": "GetLowStockParts",
+    "RelativePath": "api/Customers/statistics/low-stock-parts",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ServiceAutoProiect.Controllers.CustomersController",
+    "Method": "GetMechanicPerformance",
+    "RelativePath": "api/Customers/statistics/mechanic-performance",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ServiceAutoProiect.Controllers.CustomersController",
+    "Method": "GetServiceTypeAnalysis",
+    "RelativePath": "api/Customers/statistics/service-type-analysis",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ServiceAutoProiect.Controllers.CustomersController",
+    "Method": "GetTopCustomers",
+    "RelativePath": "api/Customers/statistics/top-customers",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ServiceAutoProiect.Controllers.CustomersController",
+    "Method": "GetTotalRevenue",
+    "RelativePath": "api/Customers/statistics/total-revenue",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ServiceAutoProiect.Controllers.CustomersController",
+    "Method": "GetTotalServices",
+    "RelativePath": "api/Customers/statistics/total-services",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ServiceAutoProiect.Controllers.CustomersController",
+    "Method": "GetTopMechanicsByRevenue",
+    "RelativePath": "api/Customers/top-mechanics-by-revenue",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ServiceAutoProiect.Controllers.CustomersController",
+    "Method": "UpdateCar",
+    "RelativePath": "api/Customers/UpdateCar",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "car",
+        "Type": "ServiceAutoProiect.Models.Car",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ServiceAutoProiect.Controllers.CustomersController",
+    "Method": "UpdateService",
+    "RelativePath": "api/Customers/UpdateService/{serviceID}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "serviceID",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "service",
+        "Type": "ServiceAutoProiect.Models.Service",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ServiceAutoProiect.Controllers.WeatherForecastController",
+    "Method": "Get",
+    "RelativePath": "WeatherForecast",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[ServiceAutoProiect.WeatherForecast, ServiceAutoProiect, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "GetWeatherForecast"
+  }
+]

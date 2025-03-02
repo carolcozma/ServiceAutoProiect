@@ -1,0 +1,327 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\carol\\Desktop\\ProiectBD\\ServiceAutoProiect_backend\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{354E3945-C199-420D-A24B-D4FB5B3ADBE3}|ServiceAutoProiect\\ServiceAutoProiect.csproj|c:\\users\\carol\\desktop\\proiectbd\\serviceautoproiect_backend\\serviceautoproiect\\controllers\\customerscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{354E3945-C199-420D-A24B-D4FB5B3ADBE3}|ServiceAutoProiect\\ServiceAutoProiect.csproj|solutionrelative:serviceautoproiect\\controllers\\customerscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{354E3945-C199-420D-A24B-D4FB5B3ADBE3}|ServiceAutoProiect\\ServiceAutoProiect.csproj|c:\\users\\carol\\desktop\\proiectbd\\serviceautoproiect_backend\\serviceautoproiect\\models\\monthlyrevenue.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{354E3945-C199-420D-A24B-D4FB5B3ADBE3}|ServiceAutoProiect\\ServiceAutoProiect.csproj|solutionrelative:serviceautoproiect\\models\\monthlyrevenue.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{354E3945-C199-420D-A24B-D4FB5B3ADBE3}|ServiceAutoProiect\\ServiceAutoProiect.csproj|c:\\users\\carol\\desktop\\proiectbd\\serviceautoproiect_backend\\serviceautoproiect\\models\\mechanicrevenue.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{354E3945-C199-420D-A24B-D4FB5B3ADBE3}|ServiceAutoProiect\\ServiceAutoProiect.csproj|solutionrelative:serviceautoproiect\\models\\mechanicrevenue.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{354E3945-C199-420D-A24B-D4FB5B3ADBE3}|ServiceAutoProiect\\ServiceAutoProiect.csproj|c:\\users\\carol\\desktop\\proiectbd\\serviceautoproiect_backend\\serviceautoproiect\\models\\servicetypedistribution.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{354E3945-C199-420D-A24B-D4FB5B3ADBE3}|ServiceAutoProiect\\ServiceAutoProiect.csproj|solutionrelative:serviceautoproiect\\models\\servicetypedistribution.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{354E3945-C199-420D-A24B-D4FB5B3ADBE3}|ServiceAutoProiect\\ServiceAutoProiect.csproj|c:\\users\\carol\\desktop\\proiectbd\\serviceautoproiect_backend\\serviceautoproiect\\models\\servicepartcs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{354E3945-C199-420D-A24B-D4FB5B3ADBE3}|ServiceAutoProiect\\ServiceAutoProiect.csproj|solutionrelative:serviceautoproiect\\models\\servicepartcs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{354E3945-C199-420D-A24B-D4FB5B3ADBE3}|ServiceAutoProiect\\ServiceAutoProiect.csproj|c:\\users\\carol\\desktop\\proiectbd\\serviceautoproiect_backend\\serviceautoproiect\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{354E3945-C199-420D-A24B-D4FB5B3ADBE3}|ServiceAutoProiect\\ServiceAutoProiect.csproj|solutionrelative:serviceautoproiect\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{354E3945-C199-420D-A24B-D4FB5B3ADBE3}|ServiceAutoProiect\\ServiceAutoProiect.csproj|c:\\users\\carol\\desktop\\proiectbd\\serviceautoproiect_backend\\serviceautoproiect\\models\\car.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{354E3945-C199-420D-A24B-D4FB5B3ADBE3}|ServiceAutoProiect\\ServiceAutoProiect.csproj|solutionrelative:serviceautoproiect\\models\\car.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{354E3945-C199-420D-A24B-D4FB5B3ADBE3}|ServiceAutoProiect\\ServiceAutoProiect.csproj|c:\\users\\carol\\desktop\\proiectbd\\serviceautoproiect_backend\\serviceautoproiect\\models\\carpart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{354E3945-C199-420D-A24B-D4FB5B3ADBE3}|ServiceAutoProiect\\ServiceAutoProiect.csproj|solutionrelative:serviceautoproiect\\models\\carpart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{354E3945-C199-420D-A24B-D4FB5B3ADBE3}|ServiceAutoProiect\\ServiceAutoProiect.csproj|c:\\users\\carol\\desktop\\proiectbd\\serviceautoproiect_backend\\serviceautoproiect\\models\\service.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{354E3945-C199-420D-A24B-D4FB5B3ADBE3}|ServiceAutoProiect\\ServiceAutoProiect.csproj|solutionrelative:serviceautoproiect\\models\\service.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{354E3945-C199-420D-A24B-D4FB5B3ADBE3}|ServiceAutoProiect\\ServiceAutoProiect.csproj|c:\\users\\carol\\desktop\\proiectbd\\serviceautoproiect_backend\\serviceautoproiect\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{354E3945-C199-420D-A24B-D4FB5B3ADBE3}|ServiceAutoProiect\\ServiceAutoProiect.csproj|solutionrelative:serviceautoproiect\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{354E3945-C199-420D-A24B-D4FB5B3ADBE3}|ServiceAutoProiect\\ServiceAutoProiect.csproj|c:\\users\\carol\\desktop\\proiectbd\\serviceautoproiect_backend\\serviceautoproiect\\models\\addservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{354E3945-C199-420D-A24B-D4FB5B3ADBE3}|ServiceAutoProiect\\ServiceAutoProiect.csproj|solutionrelative:serviceautoproiect\\models\\addservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{354E3945-C199-420D-A24B-D4FB5B3ADBE3}|ServiceAutoProiect\\ServiceAutoProiect.csproj|c:\\users\\carol\\desktop\\proiectbd\\serviceautoproiect_backend\\serviceautoproiect\\models\\response.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{354E3945-C199-420D-A24B-D4FB5B3ADBE3}|ServiceAutoProiect\\ServiceAutoProiect.csproj|solutionrelative:serviceautoproiect\\models\\response.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{354E3945-C199-420D-A24B-D4FB5B3ADBE3}|ServiceAutoProiect\\ServiceAutoProiect.csproj|c:\\users\\carol\\desktop\\proiectbd\\serviceautoproiect_backend\\serviceautoproiect\\models\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{354E3945-C199-420D-A24B-D4FB5B3ADBE3}|ServiceAutoProiect\\ServiceAutoProiect.csproj|solutionrelative:serviceautoproiect\\models\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{354E3945-C199-420D-A24B-D4FB5B3ADBE3}|ServiceAutoProiect\\ServiceAutoProiect.csproj|c:\\users\\carol\\desktop\\proiectbd\\serviceautoproiect_backend\\serviceautoproiect\\serviceautoproiect.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{354E3945-C199-420D-A24B-D4FB5B3ADBE3}|ServiceAutoProiect\\ServiceAutoProiect.csproj|solutionrelative:serviceautoproiect\\serviceautoproiect.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{354E3945-C199-420D-A24B-D4FB5B3ADBE3}|ServiceAutoProiect\\ServiceAutoProiect.csproj|c:\\users\\carol\\desktop\\proiectbd\\serviceautoproiect_backend\\serviceautoproiect\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{354E3945-C199-420D-A24B-D4FB5B3ADBE3}|ServiceAutoProiect\\ServiceAutoProiect.csproj|solutionrelative:serviceautoproiect\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{354E3945-C199-420D-A24B-D4FB5B3ADBE3}|ServiceAutoProiect\\ServiceAutoProiect.csproj|c:\\users\\carol\\desktop\\proiectbd\\serviceautoproiect_backend\\serviceautoproiect\\models\\mechanic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{354E3945-C199-420D-A24B-D4FB5B3ADBE3}|ServiceAutoProiect\\ServiceAutoProiect.csproj|solutionrelative:serviceautoproiect\\models\\mechanic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{354E3945-C199-420D-A24B-D4FB5B3ADBE3}|ServiceAutoProiect\\ServiceAutoProiect.csproj|c:\\users\\carol\\desktop\\proiectbd\\serviceautoproiect_backend\\serviceautoproiect\\models\\pendingservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{354E3945-C199-420D-A24B-D4FB5B3ADBE3}|ServiceAutoProiect\\ServiceAutoProiect.csproj|solutionrelative:serviceautoproiect\\models\\pendingservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{354E3945-C199-420D-A24B-D4FB5B3ADBE3}|ServiceAutoProiect\\ServiceAutoProiect.csproj|c:\\users\\carol\\desktop\\proiectbd\\serviceautoproiect_backend\\serviceautoproiect\\models\\servicepartdetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{354E3945-C199-420D-A24B-D4FB5B3ADBE3}|ServiceAutoProiect\\ServiceAutoProiect.csproj|solutionrelative:serviceautoproiect\\models\\servicepartdetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{354E3945-C199-420D-A24B-D4FB5B3ADBE3}|ServiceAutoProiect\\ServiceAutoProiect.csproj|c:\\users\\carol\\desktop\\proiectbd\\serviceautoproiect_backend\\serviceautoproiect\\models\\servicedetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{354E3945-C199-420D-A24B-D4FB5B3ADBE3}|ServiceAutoProiect\\ServiceAutoProiect.csproj|solutionrelative:serviceautoproiect\\models\\servicedetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "C:\\Users\\carol\\Desktop\\ProiectBD\\ServiceAutoProiect_backend\\ServiceAutoProiect\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "ServiceAutoProiect\\Properties\\launchSettings.json",
+              "ToolTip": "C:\\Users\\carol\\Desktop\\ProiectBD\\ServiceAutoProiect_backend\\ServiceAutoProiect\\Properties\\launchSettings.json",
+              "RelativeToolTip": "ServiceAutoProiect\\Properties\\launchSettings.json",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAABIAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-10-28T20:15:50.438Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Car.cs",
+              "DocumentMoniker": "C:\\Users\\carol\\Desktop\\ProiectBD\\ServiceAutoProiect_backend\\ServiceAutoProiect\\Models\\Car.cs",
+              "RelativeDocumentMoniker": "ServiceAutoProiect\\Models\\Car.cs",
+              "ToolTip": "C:\\Users\\carol\\Desktop\\ProiectBD\\ServiceAutoProiect_backend\\ServiceAutoProiect\\Models\\Car.cs",
+              "RelativeToolTip": "ServiceAutoProiect\\Models\\Car.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-03T16:13:02.042Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MonthlyRevenue.cs",
+              "DocumentMoniker": "C:\\Users\\carol\\Desktop\\ProiectBD\\ServiceAutoProiect_backend\\ServiceAutoProiect\\Models\\MonthlyRevenue.cs",
+              "RelativeDocumentMoniker": "ServiceAutoProiect\\Models\\MonthlyRevenue.cs",
+              "ToolTip": "C:\\Users\\carol\\Desktop\\ProiectBD\\ServiceAutoProiect_backend\\ServiceAutoProiect\\Models\\MonthlyRevenue.cs",
+              "RelativeToolTip": "ServiceAutoProiect\\Models\\MonthlyRevenue.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-09T20:45:17.41Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MechanicRevenue.cs",
+              "DocumentMoniker": "C:\\Users\\carol\\Desktop\\ProiectBD\\ServiceAutoProiect_backend\\ServiceAutoProiect\\Models\\MechanicRevenue.cs",
+              "RelativeDocumentMoniker": "ServiceAutoProiect\\Models\\MechanicRevenue.cs",
+              "ToolTip": "C:\\Users\\carol\\Desktop\\ProiectBD\\ServiceAutoProiect_backend\\ServiceAutoProiect\\Models\\MechanicRevenue.cs",
+              "RelativeToolTip": "ServiceAutoProiect\\Models\\MechanicRevenue.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-09T20:44:26.015Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ServiceTypeDistribution.cs",
+              "DocumentMoniker": "C:\\Users\\carol\\Desktop\\ProiectBD\\ServiceAutoProiect_backend\\ServiceAutoProiect\\Models\\ServiceTypeDistribution.cs",
+              "RelativeDocumentMoniker": "ServiceAutoProiect\\Models\\ServiceTypeDistribution.cs",
+              "ToolTip": "C:\\Users\\carol\\Desktop\\ProiectBD\\ServiceAutoProiect_backend\\ServiceAutoProiect\\Models\\ServiceTypeDistribution.cs",
+              "RelativeToolTip": "ServiceAutoProiect\\Models\\ServiceTypeDistribution.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-09T19:55:43.293Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "CustomersController.cs",
+              "DocumentMoniker": "C:\\Users\\carol\\Desktop\\ProiectBD\\ServiceAutoProiect_backend\\ServiceAutoProiect\\Controllers\\CustomersController.cs",
+              "RelativeDocumentMoniker": "ServiceAutoProiect\\Controllers\\CustomersController.cs",
+              "ToolTip": "C:\\Users\\carol\\Desktop\\ProiectBD\\ServiceAutoProiect_backend\\ServiceAutoProiect\\Controllers\\CustomersController.cs",
+              "RelativeToolTip": "ServiceAutoProiect\\Controllers\\CustomersController.cs",
+              "ViewState": "AgIAAJ0CAAAAAAAAAAAAAJACAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-22T16:49:42.591Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ServicePartcs.cs",
+              "DocumentMoniker": "C:\\Users\\carol\\Desktop\\ProiectBD\\ServiceAutoProiect_backend\\ServiceAutoProiect\\Models\\ServicePartcs.cs",
+              "RelativeDocumentMoniker": "ServiceAutoProiect\\Models\\ServicePartcs.cs",
+              "ToolTip": "C:\\Users\\carol\\Desktop\\ProiectBD\\ServiceAutoProiect_backend\\ServiceAutoProiect\\Models\\ServicePartcs.cs",
+              "RelativeToolTip": "ServiceAutoProiect\\Models\\ServicePartcs.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-01T21:17:25.674Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\carol\\Desktop\\ProiectBD\\ServiceAutoProiect_backend\\ServiceAutoProiect\\appsettings.json",
+              "RelativeDocumentMoniker": "ServiceAutoProiect\\appsettings.json",
+              "ToolTip": "C:\\Users\\carol\\Desktop\\ProiectBD\\ServiceAutoProiect_backend\\ServiceAutoProiect\\appsettings.json",
+              "RelativeToolTip": "ServiceAutoProiect\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-10-22T16:50:47.273Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Mechanic.cs",
+              "DocumentMoniker": "C:\\Users\\carol\\Desktop\\ProiectBD\\ServiceAutoProiect_backend\\ServiceAutoProiect\\Models\\Mechanic.cs",
+              "RelativeDocumentMoniker": "ServiceAutoProiect\\Models\\Mechanic.cs",
+              "ToolTip": "C:\\Users\\carol\\Desktop\\ProiectBD\\ServiceAutoProiect_backend\\ServiceAutoProiect\\Models\\Mechanic.cs",
+              "RelativeToolTip": "ServiceAutoProiect\\Models\\Mechanic.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-07T09:33:21.865Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "PendingServices.cs",
+              "DocumentMoniker": "C:\\Users\\carol\\Desktop\\ProiectBD\\ServiceAutoProiect_backend\\ServiceAutoProiect\\Models\\PendingServices.cs",
+              "RelativeDocumentMoniker": "ServiceAutoProiect\\Models\\PendingServices.cs",
+              "ToolTip": "C:\\Users\\carol\\Desktop\\ProiectBD\\ServiceAutoProiect_backend\\ServiceAutoProiect\\Models\\PendingServices.cs",
+              "RelativeToolTip": "ServiceAutoProiect\\Models\\PendingServices.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-07T09:59:33.504Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "ServicePartDetail.cs",
+              "DocumentMoniker": "C:\\Users\\carol\\Desktop\\ProiectBD\\ServiceAutoProiect_backend\\ServiceAutoProiect\\Models\\ServicePartDetail.cs",
+              "RelativeDocumentMoniker": "ServiceAutoProiect\\Models\\ServicePartDetail.cs",
+              "ToolTip": "C:\\Users\\carol\\Desktop\\ProiectBD\\ServiceAutoProiect_backend\\ServiceAutoProiect\\Models\\ServicePartDetail.cs",
+              "RelativeToolTip": "ServiceAutoProiect\\Models\\ServicePartDetail.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-01T12:56:06.582Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "ServiceDetail.cs",
+              "DocumentMoniker": "C:\\Users\\carol\\Desktop\\ProiectBD\\ServiceAutoProiect_backend\\ServiceAutoProiect\\Models\\ServiceDetail.cs",
+              "RelativeDocumentMoniker": "ServiceAutoProiect\\Models\\ServiceDetail.cs",
+              "ToolTip": "C:\\Users\\carol\\Desktop\\ProiectBD\\ServiceAutoProiect_backend\\ServiceAutoProiect\\Models\\ServiceDetail.cs",
+              "RelativeToolTip": "ServiceAutoProiect\\Models\\ServiceDetail.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-01T12:31:47.812Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Service.cs",
+              "DocumentMoniker": "C:\\Users\\carol\\Desktop\\ProiectBD\\ServiceAutoProiect_backend\\ServiceAutoProiect\\Models\\Service.cs",
+              "RelativeDocumentMoniker": "ServiceAutoProiect\\Models\\Service.cs",
+              "ToolTip": "C:\\Users\\carol\\Desktop\\ProiectBD\\ServiceAutoProiect_backend\\ServiceAutoProiect\\Models\\Service.cs",
+              "RelativeToolTip": "ServiceAutoProiect\\Models\\Service.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-01T12:31:25.078Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "CarPart.cs",
+              "DocumentMoniker": "C:\\Users\\carol\\Desktop\\ProiectBD\\ServiceAutoProiect_backend\\ServiceAutoProiect\\Models\\CarPart.cs",
+              "RelativeDocumentMoniker": "ServiceAutoProiect\\Models\\CarPart.cs",
+              "ToolTip": "C:\\Users\\carol\\Desktop\\ProiectBD\\ServiceAutoProiect_backend\\ServiceAutoProiect\\Models\\CarPart.cs",
+              "RelativeToolTip": "ServiceAutoProiect\\Models\\CarPart.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-20T18:42:19.965Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "AddService.cs",
+              "DocumentMoniker": "C:\\Users\\carol\\Desktop\\ProiectBD\\ServiceAutoProiect_backend\\ServiceAutoProiect\\Models\\AddService.cs",
+              "RelativeDocumentMoniker": "ServiceAutoProiect\\Models\\AddService.cs",
+              "ToolTip": "C:\\Users\\carol\\Desktop\\ProiectBD\\ServiceAutoProiect_backend\\ServiceAutoProiect\\Models\\AddService.cs",
+              "RelativeToolTip": "ServiceAutoProiect\\Models\\AddService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-04T20:08:55.009Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Customer.cs",
+              "DocumentMoniker": "C:\\Users\\carol\\Desktop\\ProiectBD\\ServiceAutoProiect_backend\\ServiceAutoProiect\\Models\\Customer.cs",
+              "RelativeDocumentMoniker": "ServiceAutoProiect\\Models\\Customer.cs",
+              "ToolTip": "C:\\Users\\carol\\Desktop\\ProiectBD\\ServiceAutoProiect_backend\\ServiceAutoProiect\\Models\\Customer.cs",
+              "RelativeToolTip": "ServiceAutoProiect\\Models\\Customer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-22T17:13:04.936Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Response.cs",
+              "DocumentMoniker": "C:\\Users\\carol\\Desktop\\ProiectBD\\ServiceAutoProiect_backend\\ServiceAutoProiect\\Models\\Response.cs",
+              "RelativeDocumentMoniker": "ServiceAutoProiect\\Models\\Response.cs",
+              "ToolTip": "C:\\Users\\carol\\Desktop\\ProiectBD\\ServiceAutoProiect_backend\\ServiceAutoProiect\\Models\\Response.cs",
+              "RelativeToolTip": "ServiceAutoProiect\\Models\\Response.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-22T17:20:59.125Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "ServiceAutoProiect.csproj",
+              "DocumentMoniker": "C:\\Users\\carol\\Desktop\\ProiectBD\\ServiceAutoProiect_backend\\ServiceAutoProiect\\ServiceAutoProiect.csproj",
+              "RelativeDocumentMoniker": "ServiceAutoProiect\\ServiceAutoProiect.csproj",
+              "ToolTip": "C:\\Users\\carol\\Desktop\\ProiectBD\\ServiceAutoProiect_backend\\ServiceAutoProiect\\ServiceAutoProiect.csproj",
+              "RelativeToolTip": "ServiceAutoProiect\\ServiceAutoProiect.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-10-22T17:11:43.868Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "WeatherForecastController.cs",
+              "DocumentMoniker": "C:\\Users\\carol\\Desktop\\ProiectBD\\ServiceAutoProiect_backend\\ServiceAutoProiect\\Controllers\\WeatherForecastController.cs",
+              "RelativeDocumentMoniker": "ServiceAutoProiect\\Controllers\\WeatherForecastController.cs",
+              "ToolTip": "C:\\Users\\carol\\Desktop\\ProiectBD\\ServiceAutoProiect_backend\\ServiceAutoProiect\\Controllers\\WeatherForecastController.cs",
+              "RelativeToolTip": "ServiceAutoProiect\\Controllers\\WeatherForecastController.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAA8AAABTAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-12T21:36:00.549Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
